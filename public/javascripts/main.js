@@ -32,10 +32,17 @@ document.querySelector("#submit").addEventListener("click", function () {
   let rNum = Math.floor(Math.random() * 10);
   var randomImage = images[rNum];
 //   console.log(randomImage);
-  document.querySelector("#img").src = randomImage;
+  document.querySelector("#main").style.backgroundImage =`url(${ randomImage})`;
   var cityName = [];
   var val = document.querySelector("#location").value;
-  recent.push(val);
+  if(val.trim().length > 2){
+    recent.push(val);
+    
+  }
+  else{
+    alert("Something went wrong :")
+
+  }
   // console.log(recent)
   var ek = recent.slice(0, 3);
   // console.log(ek)
