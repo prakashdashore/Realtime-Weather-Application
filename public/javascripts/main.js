@@ -85,4 +85,10 @@ document.querySelector("#submit").addEventListener("click", function () {
   } else {
     alert("Please Enter Valid City Name.");
   }
+
+  document.querySelector("#location").value = "";
+  
+
+
+
 });

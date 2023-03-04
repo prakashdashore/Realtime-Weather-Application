@@ -4,6 +4,10 @@
   margin: 0;
   box-sizing: border-box;
 }
+::-webkit-scrollbar{
+  display: none;
+
+}
 body,
 html {
   width: 100%;
@@ -12,6 +16,7 @@ html {
   justify-content: center;
   align-items: center;
   background-color: #12445a !important;
+  overflow: hidden;
 }
 #main {
   width: 80vw;
@@ -254,13 +259,15 @@ html {
     display: none;
   }
   #main {
+    overflow: hidden;
     width: 100vw;
     height: 100vh;
-    position: absolute;
+    /* position: absolute; */
     /* background-image: url(https://images.unsplash.com/photo-1536244636800-a3f74db0f3cf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1092&q=80); */
     background-position: center;
     background-size: cover;
     position: relative;
+    background-repeat: no-repeat;
   }
   .hero {
     z-index: 99;
