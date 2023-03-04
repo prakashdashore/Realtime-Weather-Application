@@ -413,11 +413,12 @@ html {
   .details {
     position: absolute;
     top: 5%;
-    left: 5%;
+    left:3%;
+    /* margin-left: auto; */
     color: white;
     z-index: 9999;
     /* background-color: red; */
-    width: 90%;
+    width:max-content;
     height: 20%;
     display: flex;
     align-items: center;
@@ -431,11 +432,27 @@ html {
     padding: 5px 10px;
   }
   #weather-disc {
-    font-weight: 800;
-    margin-top: -20%;
+    font-weight: 900;
+    margin-top: -10%;
     font-size: 15px;
+    margin-left: -10%;
 
   }
+  #weather-icon {
+    margin-top:10%;
+    /* font-size: 15px; */
+    margin-left: -20%;
+    position: relative;
+    width:100px;
+    height:80px;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    object-position: center;
+    z-index: 1;
+    /* background: #000; */
+    /* position: absolute; */
+  }
+  
 
 
 }
