@@ -126,14 +126,17 @@ html {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  position: relative;
+  /* padding: 50px; */
 }
 #search {
   width: 50px;
-  height: 50px;
+  height:50px;
   object-fit: cover;
   object-position: center;
   z-index: 1;
   position: absolute;
+  background-repeat: no-repeat;
 }
 .details {
   position:   absolute;
@@ -430,7 +433,8 @@ html {
   #weather-disc {
     font-weight: 800;
     margin-top: -20%;
-    /* font-size: 20px; */
+    font-size: 15px;
+
   }
 
 
